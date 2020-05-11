@@ -29164,7 +29164,7 @@ exports.createContext = Script.createContext = function (context) {
 };
 
 },{}],193:[function(require,module,exports){
-function GenerateRSA() {
+window.GenerateRSA  = function() {
     const { generateKeyPairSync } = require('crypto');
     const { publicKey, privateKey } = generateKeyPairSync('rsa', {
         modulusLength: 4096,
